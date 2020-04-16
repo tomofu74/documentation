@@ -132,7 +132,7 @@ Please read up on this [article](https://debian-administration.org/article/56/Co
 
 ### Ubuntu
 
-See also [CronJob Setup](installation#cronjobs).
+See also [CronJob Setup](../installation#cronjobs).
 
 Please read up on this [how-to guide](https://help.ubuntu.com/community/CronHowto).
 
