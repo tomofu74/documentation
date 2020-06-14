@@ -88,11 +88,6 @@ class WallEntry extends \humhub\modules\content\widgets\WallEntry
     
     public $editMode = self::EDIT_MODE_MODAL;
     
-    // Will prevent the default DeleteLink and always add a MySpecialLink
-    $this->controlsOptions = [
-        'prevent' => [\humhub\modules\content\widgets\DeleteLink::class],
-        'add' => [MySpecialLink::class]
-    ];
     
     //...
     
@@ -104,6 +99,12 @@ class WallEntry extends \humhub\modules\content\widgets\WallEntry
       if($this->contentObject->content->canEdit()) {
         $this->addControl($result, [CloseLink::class, ['model' => $this->contentObject], ['sortOrder' => 200]]);
       }
+
+      // Will prevent the default DeleteLink and always add a MySpecialLink
+      $this->controlsOptions = [
+        'prevent' => [\humhub\modules\content\widgets\DeleteLink::class],
+        'add' => [MySpecialLink::class]
+      ];
       
       return $result;
     ]
