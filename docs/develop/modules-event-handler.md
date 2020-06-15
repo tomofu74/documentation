@@ -424,7 +424,7 @@ return [
 
 ```php
 // Event.php
-public static function onUserRegistration(UserEvent $event)
+public static function onUserRegistration($event)
 {
      try {
         $service = new CrmService();
