@@ -14,7 +14,7 @@ Our [translation community](https://translate.humhub.org) is responsible for mai
 | Language code (ISO)    | Language                                                                  |
 | ---------------------- | --------------------------------------------------------------------------|
 | en-US                  | English (American)                                                        |
-| en-UK                  | English (British)                                                         |
+| en-GB                  | English (British)                                                         |
 | de                     | German                                                                    |
 | fr                     | French                                                                    |
 | nl                     | Dutch                                                                     |
