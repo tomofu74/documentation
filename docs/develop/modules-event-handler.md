@@ -26,7 +26,7 @@ simple and few event handlers in order to keep a clean module structure.
 ```php
 // config.php
 use my\example\Events;
-use my\example\modles\Example;
+use my\example\modules\Example;
 
 return [
     //...
@@ -34,7 +34,7 @@ return [
         [
             'class' => Example::class, 
             'event' => Example::EVENT_SOME_EVENT,  
-            'callback' => [Event::class, 'onSomeEvent']
+            'callback' => [Events::class, 'onSomeEvent']
         ],
         //...
     ]
@@ -130,6 +130,7 @@ right after the module is enabled.
 ```php
 // config.php
 use humhub\components\ModuleManager;
+use my\example\Events;
 
 return [
     //..
@@ -137,7 +138,7 @@ return [
         [
             'class' => ModuleManager::class, 
             'event' => ModuleManager::EVENT_AFTER_MODULE_ENABLED, 
-            'callback' => [Event::class, 'onAfterModuleEnabled']
+            'callback' => [Events::class, 'onAfterModuleEnabled']
         ]
     ]
 ]
